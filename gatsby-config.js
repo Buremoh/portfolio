@@ -1,8 +1,8 @@
 require(`dotenv`).config({
   path: `.env`,
-})
+});
 
-const shouldAnalyseBundle = process.env.ANALYSE_BUNDLE
+const shouldAnalyseBundle = process.env.ANALYSE_BUNDLE;
 
 module.exports = {
   siteMetadata: {
@@ -13,7 +13,7 @@ module.exports = {
   },
   plugins: [
     {
-      resolve: `@lekoarts/gatsby-theme-cara`,
+      resolve: `My Portfolio`,
       // See the theme's README for all available options
       options: {},
     },
@@ -26,9 +26,9 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `Cara - @lekoarts/gatsby-theme-cara`,
+        name: `Bolaji Buremoh Portfolio`,
         short_name: `Cara`,
-        description: `Playful and Colorful One-Page portfolio featuring Parallax effects and animations`,
+        description: `A One-Page portfolio featuring personal projects on React.JS and Angular.JS`,
         start_url: `/`,
         background_color: `#141821`,
         theme_color: `#f6ad55`,
@@ -58,4 +58,4 @@ module.exports = {
       },
     },
   ].filter(Boolean),
-}
+};
